@@ -184,6 +184,8 @@ spec:
           containerPort: {{ .Values.bookkeeper.ports.bookie }}
         - name: http
           containerPort: {{ .Values.bookkeeper.ports.http }}
+        - name: tableservice
+          containerPort: {{ .Values.bookkeeper.ports.tableservice }}
         envFrom:
         - configMapRef:
             name: "{{ template "pulsar.fullname" . }}-{{ .Values.bookkeeper.component }}"

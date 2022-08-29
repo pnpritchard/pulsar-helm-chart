@@ -446,6 +446,7 @@ bookkeeper:
   ports:
     http: 8000
     bookie: 3181
+    tableservice: 4181
   # nodeSelector:
     # cloud.google.com/gke-nodepool: default-pool
   probe:
